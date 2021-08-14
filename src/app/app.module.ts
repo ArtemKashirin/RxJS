@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ObservableComponent } from './observable/observable/observable.component';
 import { SubscriberComponent } from './observable/subscriber/subscriber.component';
 import { SubscriptionComponent } from './observable/subscription/subscription.component';
+import { SubjectComponent } from './observable/subject/subject.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ObservableComponent,
     SubscriberComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    SubjectComponent
   ],
   imports: [
     BrowserModule,
