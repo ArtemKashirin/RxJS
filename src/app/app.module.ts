@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ObservableComponent } from './observable/observable/observable.component';
 import { SubscriberComponent } from './observable/subscriber/subscriber.component';
+import { SubscriptionComponent } from './observable/subscription/subscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ObservableComponent,
-    SubscriberComponent
+    SubscriberComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,
