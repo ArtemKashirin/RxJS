@@ -9,6 +9,7 @@ import { SubscriptionComponent } from './observable/subscription/subscription.co
 import { SubjectComponent } from './observable/subject/subject.component';
 import { BehaviorSubjectComponent } from './observable/behavior-subject/behavior-subject.component';
 import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReplaySubjectComponent } from './observable/replay-subject/replay-subje
     SubscriptionComponent,
     SubjectComponent,
     BehaviorSubjectComponent,
-    ReplaySubjectComponent
+    ReplaySubjectComponent,
+    AsyncSubjectComponent
   ],
   imports: [
     BrowserModule,
