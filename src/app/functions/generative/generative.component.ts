@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class GenerativeComponent implements OnInit {
   public operators: string = 'https://rxjs.dev/guide/operators';
+  // public ajaxLink: string = 'https://rxjs.dev/api/ajax/ajax';
 
   constructor() {
   }

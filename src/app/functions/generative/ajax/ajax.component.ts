@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ajax} from "rxjs/ajax";
 
 @Component({
   selector: 'app-ajax',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ajax.component.scss']
 })
 export class AjaxComponent implements OnInit {
+  public ajaxLink: string = 'https://rxjs.dev/api/ajax/ajax';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  ajax() {
+    ajax('https://jsonplaceholder.typicode.com/todos')
+      .subscribe(value => console.log('ajax:', value.response))
+  }
 }
