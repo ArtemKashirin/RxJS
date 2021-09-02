@@ -1,0 +1,14 @@
+<p><a [href] = "observable"><b>Observable</b></a> - класс позволяющий управлять асинхронными операциями ориентируясь на потоки
+  данных.</p>
+<p><a [href] = "createObservable"><b>Создание Observable</b></a> - при помощи порождающих функций или new Observable().</p>
+<p><a [href] = "subscribingToObservables"><b>Исполнение(подписка) Observablе</b></a> - при вызове метода subscribe() у экземпляре класса
+  Observable или у порождающей функции.</p>
+<p><b>Аргументы Observable</b> - функция, которая возвращает экземпляр класса Subscriber, который наследуется от класса
+  Subscription.</p>
+<div ><a [href] = "observable"><b>Методы  Observable:</b></a>
+  <ul>
+    <li><i>subscribe()</i> - подписывается на Observable, который может принимать три колл-бэк функции next(value?), error(err?),
+      compleate(), который вернут результат и возвращает экземпляр Subscription;</li>
+    <li><i>pipe()</i> - метод в котором комбинируются операторы в единую цепочку.</li>
+  </ul>
+</div>

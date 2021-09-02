@@ -1,16 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {ObservableComponent} from './observable/observable.component';
+import {SubscriberComponent} from "./subscriber/subscriber.component";
+import {SubscriptionComponent} from './subscription/subscription.component';
+import {SubjectsComponent} from './subjects/subjects.component';
+import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { GenerativeComponent } from './functions/generative/generative.component';
+import { AjaxComponent } from './functions/generative/ajax/ajax.component';
+import { DeferComponent } from './functions/generative/defer/defer.component';
+import { FromComponent } from './functions/generative/from/from.component';
+import { OfComponent } from './functions/generative/of/of.component';
+import { FromEventComponent } from './functions/generative/from-event/from-event.component';
+import { GenerateComponent } from './functions/generative/generate/generate.component';
+import { IntervalComponent } from './functions/generative/interval/interval.component';
+import { TimerComponent } from './functions/generative/timer/timer.component';
+import { RangeComponent } from './functions/generative/range/range.component';
+import { ThrowErrorComponent } from './functions/generative/throw-error/throw-error.component';
+import { IifComponent } from './functions/generative/iif/iif.component';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ObservableComponent } from './observable/observable/observable.component';
-import { SubscriberComponent } from './observable/subscriber/subscriber.component';
-import { SubscriptionComponent } from './observable/subscription/subscription.component';
-import { SubjectComponent } from './observable/subject/subject.component';
-import { BehaviorSubjectComponent } from './observable/behavior-subject/behavior-subject.component';
-import { ReplaySubjectComponent } from './observable/replay-subject/replay-subject.component';
-import { AsyncSubjectComponent } from './observable/async-subject/async-subject.component';
-import { OperatorsComponent } from './observable/operators/operators.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +29,22 @@ import { OperatorsComponent } from './observable/operators/operators.component';
     ObservableComponent,
     SubscriberComponent,
     SubscriptionComponent,
-    SubjectComponent,
+    SubjectsComponent,
     BehaviorSubjectComponent,
     ReplaySubjectComponent,
     AsyncSubjectComponent,
-    OperatorsComponent
+    GenerativeComponent,
+    AjaxComponent,
+    DeferComponent,
+    FromComponent,
+    OfComponent,
+    FromEventComponent,
+    GenerateComponent,
+    IntervalComponent,
+    TimerComponent,
+    RangeComponent,
+    ThrowErrorComponent,
+    IifComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,4 +53,5 @@ import { OperatorsComponent } from './observable/operators/operators.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,0 +1,16 @@
+<p><a [href] = "subjects"><b>Subject</b></a> - разновидность Observable, отличается от обычного Observable тем, что он может направлять
+  данные множеству подписчиков, которые могут подписываться в процессе исполнения, тогда как для обычного Observable подписка
+  осуществляется уникально для каждого подписчика. Исполнение на Subject происходит не в момент вызова метода subscribe() на экземпляре, а
+  в момент обращения к методам next(value?), error(err?), compleate(). Subject является по умолчанию бесконечно исполняемым. От Subject
+  наследуются классы BehaviorSubject, ReplaySubject, AsyncSubject.</p>
+<div><a [href] = "classSubject"><b>Методы и свойства Subject:</b></a>
+  <ul>
+    <li><i>closed: boolean</i> - чтение, возвращает логическое значение об отменен подписки, по умолчанию false;</li>
+    <li><i>observed: Observer< T>[]</i> - чтение,  возвращает массив из всех подписчиков;</li>
+    <li><i>asObservable(): Observable< T></i> - метод, возвращает Observable из  Subject;</li>
+    <li><i>next(value?: T)</i> - метод, в который может передаваться значение;</li>
+    <li><i>error(err?: any)</i> - метод, который будут вызван в момент когда произойдет ошибка и будет перена сама ошибка;</li>
+    <li><i>complete(): void</i> - метод, который завершает Observable;</li>
+    <li><i>unsubscribe(): void</i> - метод, отписка от Subject который завершает его.</li>
+  </ul>
+</div>
