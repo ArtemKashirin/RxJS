@@ -30,6 +30,9 @@ import { RaceComponent } from './functions/union-generative/race/race.component'
 import { ZipComponent } from './functions/union-generative/zip/zip.component';
 import { MergeMapToComponent } from './functions/operators/merge-map-to/merge-map-to.component';
 import { ConcatMapToComponent } from './functions/operators/concat-map-to/concat-map-to.component';
+import { SampleComponent } from './functions/operators/sample/sample.component';
+import { SkipUntilComponent } from './functions/operators/skip-until/skip-until.component';
+import { TakeUntilComponent } from './functions/operators/take-until/take-until.component';
 
 
 @NgModule({
@@ -63,6 +66,9 @@ import { ConcatMapToComponent } from './functions/operators/concat-map-to/concat
     ZipComponent,
     MergeMapToComponent,
     ConcatMapToComponent,
+    SampleComponent,
+    SkipUntilComponent,
+    TakeUntilComponent,
   ],
   imports: [
     BrowserModule,
