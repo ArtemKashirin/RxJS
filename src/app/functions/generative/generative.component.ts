@@ -6,7 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./generative.component.scss']
 })
 export class GenerativeComponent implements OnInit {
-  public operators: string = 'https://rxjs.dev/guide/operators';
+  public generative: string = 'https://rxjs.dev/guide/operators#creation-operators-2';
+  public unionGenerative: string = 'https://rxjs.dev/guide/operators#creation-operators-2';
+
   // public Link: string = '';
 
   constructor() {

@@ -21,6 +21,13 @@ import { TimerComponent } from './functions/generative/timer/timer.component';
 import { RangeComponent } from './functions/generative/range/range.component';
 import { ThrowErrorComponent } from './functions/generative/throw-error/throw-error.component';
 import { IifComponent } from './functions/generative/iif/iif.component';
+import { CombineLatestComponent } from './functions/union-generative/combine-latest/combine-latest.component';
+import { ForkJoinComponent } from './functions/union-generative/fork-join/fork-join.component';
+import { ConcatComponent } from './functions/union-generative/concat/concat.component';
+import { MergeComponent } from './functions/union-generative/merge/merge.component';
+import { PartitionComponent } from './functions/union-generative/partition/partition.component';
+import { RaceComponent } from './functions/union-generative/race/race.component';
+import { ZipComponent } from './functions/union-generative/zip/zip.component';
 
 
 @NgModule({
@@ -45,6 +52,13 @@ import { IifComponent } from './functions/generative/iif/iif.component';
     RangeComponent,
     ThrowErrorComponent,
     IifComponent,
+    CombineLatestComponent,
+    ForkJoinComponent,
+    ConcatComponent,
+    MergeComponent,
+    PartitionComponent,
+    RaceComponent,
+    ZipComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-<p><a [href] = "operators"><b>Порождающие операторы</b></a> - это функции для создания нового объекта Observable:</p>
+<p><a [href] = "generative"><b>Порождающие операторы</b></a> - это функции которые возвращают новый Observable, имеющий какое-то
+  определенное поведение:</p>
 <ul>
   <li><app-ajax></app-ajax></li>
   <li><app-defer></app-defer></li>
@@ -11,6 +12,16 @@
   <li><app-range></app-range></li>
   <li><app-throw-error></app-throw-error></li>
   <li><app-iif></app-iif></li>
+</ul>
+<p><a [href] = "unionGenerative"><b>Объединение порождающих операторов</b></a> - это функции которые :</p>
+<ul>
+  <li><i><app-combine-latest></app-combine-latest></i></li>
+  <li><i><app-fork-join></app-fork-join></i></li>
+  <li><i><app-concat></app-concat></i></li>
+  <li><i><app-merge></app-merge></i></li>
+  <li><i><app-partition></app-partition></i></li>
+  <li><i><app-race></app-race></i></li>
+  <li><i><app-zip></app-zip></i></li>
 </ul>
 <!--<p><a [href] = ""><i> </i></a> - .-->
 <!--  <button (click)="()">()</button>-->
