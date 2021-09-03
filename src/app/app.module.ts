@@ -28,6 +28,8 @@ import { MergeComponent } from './functions/union-generative/merge/merge.compone
 import { PartitionComponent } from './functions/union-generative/partition/partition.component';
 import { RaceComponent } from './functions/union-generative/race/race.component';
 import { ZipComponent } from './functions/union-generative/zip/zip.component';
+import { MergeMapToComponent } from './functions/operators/merge-map-to/merge-map-to.component';
+import { ConcatMapToComponent } from './functions/operators/concat-map-to/concat-map-to.component';
 
 
 @NgModule({
@@ -59,6 +61,8 @@ import { ZipComponent } from './functions/union-generative/zip/zip.component';
     PartitionComponent,
     RaceComponent,
     ZipComponent,
+    MergeMapToComponent,
+    ConcatMapToComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class GenerativeComponent implements OnInit {
   public generative: string = 'https://rxjs.dev/guide/operators#creation-operators-2';
   public unionGenerative: string = 'https://rxjs.dev/guide/operators#creation-operators-2';
+  public pipeable:string='https://rxjs.dev/guide/operators#transformation-operators';
 
   // public Link: string = '';
 
