@@ -13,6 +13,7 @@
   <li><app-throw-error></app-throw-error></li>
   <li><app-iif></app-iif></li>
 </ul>
+
 <p><a [href] = "unionGenerative"><b>Объединение порождающих операторов</b></a> - это функции, которые разделяют/объединяют/комбинируют
   результаты одного/нескольких Observable:</p>
 <ul>
@@ -24,30 +25,34 @@
   <li><app-race></app-race></li>
   <li><app-zip></app-zip></li>
 </ul>
+
 <p><a [href] = "pipeable"><b>Потоковые операторы</b></a> - это функции, которые могут быть использованы внутри метода .pipe():</p>
 <ul>
   <li><b>На каждый результат Observable</b>
     <ul>
-      <li><b>вернет результат из нового Observable:</b>
+      <li><b>вернет результат из нового Observable для каждого значения Observable:</b>
         <ul>
           <li><app-merge-map-to></app-merge-map-to></li>
           <li><app-concat-map-to></app-concat-map-to></li>
         </ul>
       </li>
-      <li><b>вернет новый Observable и в момент, когда новый Observable:</b>
-        <ul>
-          <li><app-sample></app-sample></li>
-          <li><app-skip-until></app-skip-until></li>
-          <li><app-take-until></app-take-until></li>
-        </ul>
-      </li>
-      <li><b>функция вернет новый Observable:</b></li>
-      <li><b>будет применена функция:</b></li>
-      <li><b>будет применяться перехватчик:</b></li>
-      <li><b>в случае ошибки:</b></li>
-      <li><b>возвращает постоянное статическое значение:</b></li>
+    </ul>
+
+  <li><b>Начать получить результат из Observable после получения результата из нового Observable и когда новый Observable вернет результат
+  из Observable:</b>
+    <ul>
+      <li><app-sample></app-sample></li>
+      <li><app-skip-until></app-skip-until></li>
+      <li><app-take-until></app-take-until></li>
     </ul>
   </li>
+  <li><b>функция вернет новый Observable:</b></li>
+  <li><b>будет применена функция:</b></li>
+  <li><b>будет применяться перехватчик:</b></li>
+  <li><b>в случае ошибки:</b></li>
+  <li><b>возвращает постоянное статическое значение:</b></li>
+
+
   <li><b>Буферизирует результат Observable пока:</b></li>
   <li><b>Разветвляет результат Observable на потоки:</b></li>
   <li><b>Игнорирует результат Observable:</b></li>

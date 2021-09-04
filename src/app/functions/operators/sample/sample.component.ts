@@ -19,7 +19,7 @@ export class SampleComponent implements OnInit {
 
   sampl() {
     interval(500)
-      .pipe(sample(interval(1000)))
+      .pipe(sample(interval(5000)))
       .subscribe(value => console.log('sample:', value))
 
   }
