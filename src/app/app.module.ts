@@ -33,6 +33,14 @@ import { ConcatMapToComponent } from './functions/operators/concat-map-to/concat
 import { SampleComponent } from './functions/operators/sample/sample.component';
 import { SkipUntilComponent } from './functions/operators/skip-until/skip-until.component';
 import { TakeUntilComponent } from './functions/operators/take-until/take-until.component';
+import { ConcatMapComponent } from './functions/operators/concat-map/concat-map.component';
+import { ExhaustMapComponent } from './functions/operators/exhaust-map/exhaust-map.component';
+import { SwitchMapComponent } from './functions/operators/switch-map/switch-map.component';
+import { MergeScanComponent } from './functions/operators/merge-scan/merge-scan.component';
+import { AuditComponent } from './functions/operators/audit/audit.component';
+import { DebounceComponent } from './functions/operators/debounce/debounce.component';
+import { ThrottleComponent } from './functions/operators/throttle/throttle.component';
+import { DelayWhenComponent } from './functions/operators/delay-when/delay-when.component';
 
 
 @NgModule({
@@ -69,6 +77,14 @@ import { TakeUntilComponent } from './functions/operators/take-until/take-until.
     SampleComponent,
     SkipUntilComponent,
     TakeUntilComponent,
+    ConcatMapComponent,
+    ExhaustMapComponent,
+    SwitchMapComponent,
+    MergeScanComponent,
+    AuditComponent,
+    DebounceComponent,
+    ThrottleComponent,
+    DelayWhenComponent,
   ],
   imports: [
     BrowserModule,
