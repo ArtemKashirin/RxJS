@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {interval, of} from "rxjs";
-import {concatMap} from "rxjs/operators";
+import {concatMap, take} from "rxjs/operators";
 
 @Component({
   selector: 'app-concat-map',
@@ -18,8 +18,10 @@ export class ConcatMapComponent implements OnInit {
   }
 
   concatMa() {
-    of(1000, 2000, 3000)
-      .pipe(concatMap(i => of(i + 10)))
+    interval(1000)
+      .pipe(
+        take(5),
+        concatMap(i => of(i + 10)))
       .subscribe(value => console.log('concatMap:', value))
 
   }
