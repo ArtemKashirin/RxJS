@@ -41,6 +41,24 @@ import { AuditComponent } from './functions/operators/audit/audit.component';
 import { DebounceComponent } from './functions/operators/debounce/debounce.component';
 import { ThrottleComponent } from './functions/operators/throttle/throttle.component';
 import { DelayWhenComponent } from './functions/operators/delay-when/delay-when.component';
+import { MapComponent } from './functions/operators/map/map.component';
+import { ScanComponent } from './functions/operators/scan/scan.component';
+import { GroupByComponent } from './functions/operators/group-by/group-by.component';
+import { DistinctComponent } from './functions/operators/distinct/distinct.component';
+import { DistinctUntilChangedComponent } from './functions/operators/distinct-until-changed/distinct-until-changed.component';
+import { FilterComponent } from './functions/operators/filter/filter.component';
+import { FirstComponent } from './functions/operators/first/first.component';
+import { LastComponent } from './functions/operators/last/last.component';
+import { SingleComponent } from './functions/operators/single/single.component';
+import { TakeWhileComponent } from './functions/operators/take-while/take-while.component';
+import { SkipWhileComponent } from './functions/operators/skip-while/skip-while.component';
+import { EveryComponent } from './functions/operators/every/every.component';
+import { FindComponent } from './functions/operators/find/find.component';
+import { FindIndexComponent } from './functions/operators/find-index/find-index.component';
+import { CountComponent } from './functions/operators/count/count.component';
+import { MaxComponent } from './functions/operators/max/max.component';
+import { MinComponent } from './functions/operators/min/min.component';
+import { ReduceComponent } from './functions/operators/reduce/reduce.component';
 
 
 @NgModule({
@@ -85,6 +103,24 @@ import { DelayWhenComponent } from './functions/operators/delay-when/delay-when.
     DebounceComponent,
     ThrottleComponent,
     DelayWhenComponent,
+    MapComponent,
+    ScanComponent,
+    GroupByComponent,
+    DistinctComponent,
+    DistinctUntilChangedComponent,
+    FilterComponent,
+    FirstComponent,
+    LastComponent,
+    SingleComponent,
+    TakeWhileComponent,
+    SkipWhileComponent,
+    EveryComponent,
+    FindComponent,
+    FindIndexComponent,
+    CountComponent,
+    MaxComponent,
+    MinComponent,
+    ReduceComponent,
   ],
   imports: [
     BrowserModule,
