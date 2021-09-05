@@ -59,6 +59,9 @@ import { CountComponent } from './functions/operators/count/count.component';
 import { MaxComponent } from './functions/operators/max/max.component';
 import { MinComponent } from './functions/operators/min/min.component';
 import { ReduceComponent } from './functions/operators/reduce/reduce.component';
+import { TapComponent } from './functions/operators/tap/tap.component';
+import { TimeIntervalComponent } from './functions/operators/time-interval/time-interval.component';
+import { TimestampComponent } from './functions/operators/timestamp/timestamp.component';
 
 
 @NgModule({
@@ -121,6 +124,9 @@ import { ReduceComponent } from './functions/operators/reduce/reduce.component';
     MaxComponent,
     MinComponent,
     ReduceComponent,
+    TapComponent,
+    TimeIntervalComponent,
+    TimestampComponent,
   ],
   imports: [
     BrowserModule,
