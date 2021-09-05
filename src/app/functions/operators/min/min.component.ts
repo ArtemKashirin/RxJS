@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {of} from "rxjs";
+import {min} from "rxjs/operators";
 
 @Component({
   selector: 'app-min',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./min.component.scss']
 })
 export class MinComponent implements OnInit {
+  public minLink: string = 'https://rxjs.dev/api/operators/min';
+  public min: string = 'min<T>(comparer?: (x: T, y: T) => number): MonoTypeOperatorFunction<T>';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  mi() {
+    of(1, 6, 9, 4)
+      .pipe(min())
+      .subscribe(value => console.log('min:', value))
+  }
 }
