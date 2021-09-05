@@ -62,6 +62,9 @@ import { ReduceComponent } from './functions/operators/reduce/reduce.component';
 import { TapComponent } from './functions/operators/tap/tap.component';
 import { TimeIntervalComponent } from './functions/operators/time-interval/time-interval.component';
 import { TimestampComponent } from './functions/operators/timestamp/timestamp.component';
+import { CatchErrorComponent } from './functions/operators/catch-error/catch-error.component';
+import { RetryWhenComponent } from './functions/operators/retry-when/retry-when.component';
+import { RetryComponent } from './functions/operators/retry/retry.component';
 
 
 @NgModule({
@@ -127,6 +130,9 @@ import { TimestampComponent } from './functions/operators/timestamp/timestamp.co
     TapComponent,
     TimeIntervalComponent,
     TimestampComponent,
+    CatchErrorComponent,
+    RetryWhenComponent,
+    RetryComponent,
   ],
   imports: [
     BrowserModule,
