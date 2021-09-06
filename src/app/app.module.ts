@@ -74,6 +74,17 @@ import { WindowComponent } from './functions/operators/window/window.component';
 import { WindowTimeComponent } from './functions/operators/window-time/window-time.component';
 import { WindowCountComponent } from './functions/operators/window-count/window-count.component';
 import { WindowWhenComponent } from './functions/operators/window-when/window-when.component';
+import { AuditTimeComponent } from './functions/operators/audit-time/audit-time.component';
+import { DebounceTimeComponent } from './functions/operators/debounce-time/debounce-time.component';
+import { ElementAtComponent } from './functions/operators/element-at/element-at.component';
+import { SampleTimeComponent } from './functions/operators/sample-time/sample-time.component';
+import { SkipComponent } from './functions/operators/skip/skip.component';
+import { SkipLastComponent } from './functions/operators/skip-last/skip-last.component';
+import { TakeComponent } from './functions/operators/take/take.component';
+import { TakeLastComponent } from './functions/operators/take-last/take-last.component';
+import { ThrottleTimeComponent } from './functions/operators/throttle-time/throttle-time.component';
+import { DistinctUntilKeyChangedComponent } from './functions/operators/distinct-until-key-changed/distinct-until-key-changed.component';
+import { IgnoreElementsComponent } from './functions/operators/ignore-elements/ignore-elements.component';
 
 
 @NgModule({
@@ -151,6 +162,17 @@ import { WindowWhenComponent } from './functions/operators/window-when/window-wh
     WindowTimeComponent,
     WindowCountComponent,
     WindowWhenComponent,
+    AuditTimeComponent,
+    DebounceTimeComponent,
+    ElementAtComponent,
+    SampleTimeComponent,
+    SkipComponent,
+    SkipLastComponent,
+    TakeComponent,
+    TakeLastComponent,
+    ThrottleTimeComponent,
+    DistinctUntilKeyChangedComponent,
+    IgnoreElementsComponent,
   ],
   imports: [
     BrowserModule,
