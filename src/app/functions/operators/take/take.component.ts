@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {interval} from "rxjs";
+import {take} from "rxjs/operators";
 
 @Component({
   selector: 'app-take',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./take.component.scss']
 })
 export class TakeComponent implements OnInit {
+  public takeLink: string = 'https://rxjs.dev/api/operators/take';
+  public take: string = 'take<T>(count: number): MonoTypeOperatorFunction<T>';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  tak() {
+    interval(500)
+      .pipe(take(4))
+      .subscribe(value => console.log('take:', value))
+
+  }
 }

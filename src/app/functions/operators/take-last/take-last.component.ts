@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./take-last.component.scss']
 })
 export class TakeLastComponent implements OnInit {
+  // public Link: string = '';
+  // public Link: string = '';
 
   constructor() { }
 
