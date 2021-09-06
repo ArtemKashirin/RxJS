@@ -88,6 +88,7 @@ import { IgnoreElementsComponent } from './functions/operators/ignore-elements/i
 import { ConcatAllComponent } from './functions/operators/concat-all/concat-all.component';
 import { MergeAllComponent } from './functions/operators/merge-all/merge-all.component';
 import { WithLatestFromComponent } from './functions/operators/with-latest-from/with-latest-from.component';
+import { MapToComponent } from './functions/operators/map-to/map-to.component';
 
 
 @NgModule({
@@ -179,6 +180,7 @@ import { WithLatestFromComponent } from './functions/operators/with-latest-from/
     ConcatAllComponent,
     MergeAllComponent,
     WithLatestFromComponent,
+    MapToComponent,
   ],
   imports: [
     BrowserModule,
