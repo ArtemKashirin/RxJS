@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {interval} from "rxjs";
 import {windowCount} from "rxjs/operators";
 
@@ -11,7 +11,8 @@ export class WindowCountComponent implements OnInit {
   public windowCountLink: string = 'https://rxjs.dev/api/operators/windowCount';
   public windowCount: string = 'windowCount<T>(windowSize: number, startWindowEvery: number = 0): OperatorFunction<T, Observable<T>>';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

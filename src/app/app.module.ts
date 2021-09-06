@@ -73,6 +73,7 @@ import { BufferTimeComponent } from './functions/operators/buffer-time/buffer-ti
 import { WindowComponent } from './functions/operators/window/window.component';
 import { WindowTimeComponent } from './functions/operators/window-time/window-time.component';
 import { WindowCountComponent } from './functions/operators/window-count/window-count.component';
+import { WindowWhenComponent } from './functions/operators/window-when/window-when.component';
 
 
 @NgModule({
@@ -149,6 +150,7 @@ import { WindowCountComponent } from './functions/operators/window-count/window-
     WindowComponent,
     WindowTimeComponent,
     WindowCountComponent,
+    WindowWhenComponent,
   ],
   imports: [
     BrowserModule,
