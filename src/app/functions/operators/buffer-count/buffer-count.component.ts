@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {interval} from "rxjs";
+import {bufferCount} from "rxjs/operators";
 
 @Component({
   selector: 'app-buffer-count',
@@ -6,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buffer-count.component.scss']
 })
 export class BufferCountComponent implements OnInit {
-  // public Link: string = '';
-  // public Link: string = '';
+  public bufferCountLink: string = 'https://rxjs.dev/api/operators/bufferCount';
+  public bufferCount: string = 'bufferCount<T>(bufferSize: number, startBufferEvery: number = null): OperatorFunction<T, T[]>';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  bufferCoun() {
+    interval(1000)
+      .pipe(bufferCount(5))
+      .subscribe(value => console.log('bufferCount:', value))
+  }
 }
