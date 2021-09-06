@@ -85,6 +85,9 @@ import { TakeLastComponent } from './functions/operators/take-last/take-last.com
 import { ThrottleTimeComponent } from './functions/operators/throttle-time/throttle-time.component';
 import { DistinctUntilKeyChangedComponent } from './functions/operators/distinct-until-key-changed/distinct-until-key-changed.component';
 import { IgnoreElementsComponent } from './functions/operators/ignore-elements/ignore-elements.component';
+import { ConcatAllComponent } from './functions/operators/concat-all/concat-all.component';
+import { MergeAllComponent } from './functions/operators/merge-all/merge-all.component';
+import { WithLatestFromComponent } from './functions/operators/with-latest-from/with-latest-from.component';
 
 
 @NgModule({
@@ -173,6 +176,9 @@ import { IgnoreElementsComponent } from './functions/operators/ignore-elements/i
     ThrottleTimeComponent,
     DistinctUntilKeyChangedComponent,
     IgnoreElementsComponent,
+    ConcatAllComponent,
+    MergeAllComponent,
+    WithLatestFromComponent,
   ],
   imports: [
     BrowserModule,
