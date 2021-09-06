@@ -27,7 +27,7 @@
 </ul>
 
 <p><a [href] = "pipeable"><b>Потоковые операторы</b></a> - это функции, которые могут быть использованы внутри метода .pipe():</p>
-<ul>
+<ol>
   <li><b>На каждый результат Observable</b>
     <ul>
       <li><b>вернет результат из нового Observable для каждого значения Observable:</b>
@@ -100,9 +100,14 @@
     </ul>
   </li>
 
-
-  <li><b>возвращает постоянное статическое значение:</b></li>
-  <li><b>Буферизирует результат Observable пока:</b></li>
+  <li><b>Буферизирует результат Observable пока:</b>
+    <ul>
+      <li><app-buffer></app-buffer></li>
+      <li><app-buffer-when></app-buffer-when></li>
+      <li><app-buffer-count></app-buffer-count></li>
+      <li><app-buffer-time></app-buffer-time></li>
+    </ul>
+  </li>
   <li><b>Разветвляет результат Observable на потоки:</b></li>
   <li><b>Игнорирует результат Observable:</b></li>
   <li><b>Объединяет результаты Observable и Observable высшего порядка в один Observable:</b></li>
@@ -113,8 +118,9 @@
   <li><b>Возвращает заданное статическое значение если после завершения Observable не был возвращен результат:</b></li>
   <li><b>Возвращает логическое значение после завершения Observable, false если было возвращено значение, а иначе true:</b></li>
   <li><b>Результат Observable возвращается с первого переданного статического значения:</b></li>
+  <li><b>возвращает постоянное статическое значение:</b></li>
 
-</ul>
+</ol>
 
 <!--<p><a [href] = ""><i> </i></a> - .-->
 <!--  <button (click)="()">()</button>-->

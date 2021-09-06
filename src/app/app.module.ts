@@ -66,6 +66,10 @@ import { CatchErrorComponent } from './functions/operators/catch-error/catch-err
 import { RetryWhenComponent } from './functions/operators/retry-when/retry-when.component';
 import { RetryComponent } from './functions/operators/retry/retry.component';
 import { ExpandComponent } from './functions/operators/expand/expand.component';
+import { BufferComponent } from './functions/operators/buffer/buffer.component';
+import { BufferWhenComponent } from './functions/operators/buffer-when/buffer-when.component';
+import { BufferCountComponent } from './functions/operators/buffer-count/buffer-count.component';
+import { BufferTimeComponent } from './functions/operators/buffer-time/buffer-time.component';
 
 
 @NgModule({
@@ -135,6 +139,10 @@ import { ExpandComponent } from './functions/operators/expand/expand.component';
     RetryWhenComponent,
     RetryComponent,
     ExpandComponent,
+    BufferComponent,
+    BufferWhenComponent,
+    BufferCountComponent,
+    BufferTimeComponent,
   ],
   imports: [
     BrowserModule,
