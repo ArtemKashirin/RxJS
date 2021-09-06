@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {interval, range} from "rxjs";
+import {takeLast} from "rxjs/operators";
 
 @Component({
   selector: 'app-take-last',
@@ -6,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./take-last.component.scss']
 })
 export class TakeLastComponent implements OnInit {
-  // public Link: string = '';
-  // public Link: string = '';
+  public takeLastLink: string = 'https://rxjs.dev/api/operators/takeLast';
+  public takeLast: string = 'takeLast<T>(count: number): MonoTypeOperatorFunction<T>';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  takeLas() {
+    range(0, 10)
+      .pipe(takeLast(3))
+      .subscribe(value => console.log('takeLast:', value))
+
+  }
 }
