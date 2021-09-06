@@ -65,6 +65,7 @@ import { TimestampComponent } from './functions/operators/timestamp/timestamp.co
 import { CatchErrorComponent } from './functions/operators/catch-error/catch-error.component';
 import { RetryWhenComponent } from './functions/operators/retry-when/retry-when.component';
 import { RetryComponent } from './functions/operators/retry/retry.component';
+import { ExpandComponent } from './functions/operators/expand/expand.component';
 
 
 @NgModule({
@@ -133,6 +134,7 @@ import { RetryComponent } from './functions/operators/retry/retry.component';
     CatchErrorComponent,
     RetryWhenComponent,
     RetryComponent,
+    ExpandComponent,
   ],
   imports: [
     BrowserModule,
